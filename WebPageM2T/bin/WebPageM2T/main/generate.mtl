@@ -1,0 +1,70 @@
+[comment encoding = UTF-8 /]
+[module generate('http://www.eclipse.org/emf/2002/Ecore', 'platform:/plugin/tdt4250.a1/model/a1.ecore')]
+
+
+[template public generateUniversity(uni : University)]
+[comment @main/]
+[file (uni.name.concat('.html'), false, 'UTF-8')]
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html>
+	<body>
+		<h1>
+			[uni.name/]
+		</h1>
+		[for(program : Program | uni.programs)]
+			[generateProgram(program)/]
+		[/for]
+	</body>
+</html>
+
+[/file]
+[/template]
+[template public generateProgram(p : Program)]
+<div class='program'>
+	<h2>[p.name/] - [p.type.toString().toLower().replace('_', '-')/]</h2>
+	[for(semester : Semester | p.semesters)]
+		[generateSemester(semester)/]
+	[/for]
+</div>
+[/template]
+[template public generateSemester(s : Semester)]
+<div class='semester'>
+	<style>
+		table, th, tr, td {
+    		border: 1px solid black;
+   			border-collapse: collapse;
+    	}
+	th, td {
+  		padding: 5px;
+	}
+	</style>
+	<h3>[(s.number / 2).round()/].År, [if s.number.mod(2) = 0]Vår[/if][if s.number.mod(2) = 1]Høst[/if]</h3>
+	[if(s.specialization.name.oclIsInvalid() = false)]<h4>[s.specialization.name/]</h4>[/if]
+	<table>
+		<tr>
+			<th>Kode</th>
+			<th>Navn</th>
+			<th>SP</th>
+			<th>Status</th>	
+		</tr>
+		[for(cs : CourseStatus | s.courseStatuses)]
+			
+			<tr>
+				<td>[cs.course.code/]</td>
+				<td>[cs.course.name/]</td>
+				<td>[cs.course.credits/]</td>
+				<td>[cs.statusCode/]</td>
+			</tr>
+		[/for]
+	</table>
+</div>
+[/template]
+[comment]
+[template public findCourseStatus(s : Semester, c : Course)]
+[for(cs : CourseStatus | s.courseStatuses)]
+	[if cs.course = c]
+		[cs.statusCode/]	
+	[/if]
+[/for]
+[/template]
+[/comment]

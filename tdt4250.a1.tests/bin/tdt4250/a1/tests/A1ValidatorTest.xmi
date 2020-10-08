@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<a1:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:a1="platform:/plugin/tdt4250.a1/model/a1.ecore"
+    xsi:schemaLocation="platform:/plugin/tdt4250.a1/model/a1.ecore a1.ecore"
+    name="NTNU">
+  <courses name="Examen philosophicum for naturvitenskap og teknologi"
+      code="EXPH0004"
+      credits="7.5"/>
+  <courses name="HMS-kurs for 1. årsstudenter"
+      code="HMS0002"/>
+  <courses name="Informasjonsteknologi, grunnkurs"
+      code="TDT4110"
+      credits="7.5"/>
+  <courses name="Matematikk 1"
+      code="TMA4100"
+      credits="7.5"/>
+  <courses name="Diskret matematikk"
+      code="TMA4140"
+      credits="7.5"/>
+  <courses name="Objektorientert programmering"
+      code="TDT4100"
+      credits="7.5"
+      level="SECOND_YEAR"/>
+  <courses name="Programmeringslab for datateknologi"
+      code="TDT4112"
+      credits="7.5"
+      level="SECOND_YEAR"/>
+  <courses name="Krets- og digitalteknikk"
+      code="TFE4101"
+      credits="7.5"
+      level="SECOND_YEAR"/>
+  <courses name="Matematikk 3"
+      code="TMA4115"
+      credits="7.5"
+      level="SECOND_YEAR"/>
+  <courses name="Introduksjon til kunstig intelligens"
+      code="TDT4136"
+      credits="7.5"
+      level="THIRD_YEAR"/>
+  <courses name="Informasjonssystemer"
+      code="TDT4175"
+      credits="7.5"/>
+  <courses name="Matematikk 4D"
+      code="TMA4135"
+      credits="7.5"
+      level="THIRD_YEAR"/>
+  <courses name="Webutvikling"
+      code="IT2810"
+      credits="7.5"
+      level="THIRD_YEAR"/>
+  <courses name="Informasjonsgjenfinning"
+      code="TDT4117"
+      credits="7.5"
+      level="THIRD_YEAR"/>
+  <courses name="Kognitive arkitekturer"
+      code="TDT4137"
+      credits="7.5"
+      level="THIRD_YEAR"/>
+  <programs
+      name="Datateknologi">
+    <specializations
+        name="AI"/>
+    <specializations
+        name="Programvaresystemer"
+        furtherSpecialization="Spillutvikling"/>
+    <specializations
+        name="Databaser og søk"/>
+    <specializations
+        name="Algoritmer"/>
+    <semesters
+        number="1">
+      <courseStatuses
+          course="//@courses.0"/>
+      <courseStatuses
+          course="//@courses.2"/>
+      <courseStatuses
+          course="//@courses.1"/>
+      <courseStatuses
+          course="//@courses.3"/>
+      <courseStatuses
+          course="//@courses.4"/>
+    </semesters>
+    <semesters
+        number="2">
+      <courseStatuses
+          course="//@courses.5"/>
+      <courseStatuses
+          course="//@courses.6"/>
+      <courseStatuses
+          course="//@courses.7"/>
+      <courseStatuses
+          course="//@courses.8"/>
+    </semesters>
+    <semesters
+        number="5"
+        specialization="//@programs.0/@specializations.1">
+      <courseStatuses
+          course="//@courses.9"/>
+      <courseStatuses
+          course="//@courses.10"/>
+      <courseStatuses
+          course="//@courses.11"/>
+      <courseStatuses
+          course="//@courses.13"
+          statusCode="VA"/>
+      <courseStatuses
+          course="//@courses.12"
+          statusCode="VA"/>
+    </semesters>
+    <semesters
+        number="5"
+        specialization="//@programs.0/@specializations.2">
+      <courseStatuses
+          course="//@courses.9"/>
+      <courseStatuses
+          course="//@courses.13"/>
+      <courseStatuses
+          course="//@courses.11"/>
+      <courseStatuses
+          course="//@courses.12"
+          statusCode="VA"/>
+      <courseStatuses
+          course="//@courses.14"
+          statusCode="VA"/>
+    </semesters>
+  </programs>
+  <programs
+      name="Datateknologi"
+      type="MASTER_2ÅRIG"/>
+  <programs
+      name="Nanoteknologi"/>
+  <programs
+      name="Industriell Økonomi"/>
+  <programs
+      name="Fysikk og matematikk"/>
+</a1:University>

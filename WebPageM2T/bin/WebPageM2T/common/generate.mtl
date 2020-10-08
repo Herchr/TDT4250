@@ -1,0 +1,7 @@
+[comment encoding = UTF-8 /]
+[module generate('http://www.eclipse.org/emf/2002/Ecore', 'platform:/plugin/tdt4250.a1/model/a1.ecore')]
+
+
+[template public generateElement(anUniversity : University)]
+
+[/template]
