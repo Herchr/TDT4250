@@ -15,10 +15,10 @@
 * **tdt4250.a1.tests**
      contains the generated tests for all the classes of the model
 
-* **WebPageM2t**
+* **WebPageM2T**
      * **src**
           * **main** contains the transformation
-     * **dst_code** contains the website in html format. [Here](TDT4250/WebPageM2T/dst_code/) is the website.
+     * **dst_code** contains the website in html format. [Here](https://github.com/Herchr/TDT4250//WebPageM2T/dst_code/) is the website.
  
 
     
