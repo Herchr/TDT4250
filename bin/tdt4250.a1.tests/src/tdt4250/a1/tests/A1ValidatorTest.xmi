@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<a1:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:a1="platform:/plugin/tdt4250.a1/model/a1.ecore"
+    xsi:schemaLocation="platform:/plugin/tdt4250.a1/model/a1.ecore ../../../../../tdt4250.a1/model/a1.ecore">
+  <programs
+      name="3939">
+    <specializations
+        name="223"
+        furtherSpecialization="111"/>
+    <semesters
+        number="1"
+        specialization="//@programs.0/@specializations.0">
+      <courses
+          name="Smm"
+          code="TDT426"
+          credits="30.0"/>
+    </semesters>
+  </programs>
+</a1:University>
