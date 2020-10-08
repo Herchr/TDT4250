@@ -18,7 +18,7 @@
 * **WebPageM2t**
      * **src**
           * **main** contains the transformation
-     * **dst_code** contains the website in html format 
+     * **dst_code** contains the website in html format. [Here](TDT4250/WebPageM2T/dst_code/) is the website.
  
 
     
