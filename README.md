@@ -11,6 +11,7 @@
 
 - This assignment was implemented using an M2T tranformation with Acceleo.
 - To avoid duplication, the Semester class no longer contains a list of courses. The courses are instead accessed through the courseStatus attribute.
+- To run the transformation, run generate.mtl as an Acceleo application. Configure University.xml as the model, and dst_code as the target folder
 
 * **tdt4250.a1.tests**
      contains the generated tests for all the classes of the model
